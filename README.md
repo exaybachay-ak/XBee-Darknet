@@ -9,6 +9,8 @@ Create software and instructions for assembling the hardware/firmware/software r
 -compile this list and refer to it in this repo so anyone can reproduce this project
 -hardware stack will not include wifi or ethernet.  Only 900MHz XBee for darknet comms.
 2. Write python script that will take in messages and/or files, and send them over 900MHz
+-script will import Scapy for reading network interface bytes
+http://bt3gl.github.io/black-hat-python-infinite-possibilities-with-the-scapy-module.html
 -stations will act as repeaters as well, re-broadcasting received messages
 --each received message is compared to previously sent and received messages.  If it matches either, then it is discarded
 3. Once developed fully, publish the stack here with hardware and build instructions
